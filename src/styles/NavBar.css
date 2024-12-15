@@ -1,0 +1,42 @@
+header {
+  /* Header */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-color: #111c38 !important;
+}
+nav,
+ul {
+  background-color: none !important;
+}
+
+li {
+  /* Frame 1000001562 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  gap: 5px;
+
+  margin: 0 auto;
+
+  background: rgba(205, 14, 18, 0.53);
+  backdrop-filter: blur(2px);
+
+  border-radius: 23px;
+
+  color: white;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+li a {
+  font-size: 14px;
+}

@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #111c38;
+}
+
+.jumbo-carousel-title {
+  color: var(--Ink-100, #fff);
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-size: clamp(2rem, 1.8625rem + 0.6875vw, 2.6875rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 38.4px */
+}
+
+.jumbo-carousel-text {
+  color: var(--Ink-200, #ebebeb);
+  /* Desktop/Body text/300/Regular */
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.975rem + 0.125vw, 1.125rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 21.6px */
+}
+.jumbo-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  color: var(--Solid-Primary-Original, #f82428);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 21.6px */
+}
+
+.page-titles {
+  border-left: 5px solid;
+  padding-left: 4%;
+  color: var(--Ink-700, #343435);
+  font-family: Montserrat;
+  font-size: 1.5rem !important;
+  font-size: clamp(1.5rem, 1.4rem + 0.5vw, 2rem) !important;
+  font-style: normal;
+  font-weight: 800 !important;
+  line-height: 120%; /* 38.4px */
+}
+.see-all {
+  color: var(--Solid-Primary-Original, #f82428);
+  /* Desktop/Body text/300/SemiBold */
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-size: clamp(0.875rem, 0.825rem + 0.25vw, 1.125rem);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 21.6px */
+}
