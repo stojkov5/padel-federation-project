@@ -1,7 +1,7 @@
 const LandingImage = () => {
   return (
     <div>
-      <img
+      <img style={{ width: "100%" }}
         className="landing-image"
         src="/images/FederationImages/FederationLanding.svg"
         alt="Landing Image"
