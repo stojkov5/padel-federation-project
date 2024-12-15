@@ -1,81 +1,55 @@
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "/images/logo.svg";
 import "../styles/NavBar.css";
+import { NavLink } from "react-router-dom";
+import { MdLanguage } from "react-icons/md";
 
-const NavBar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+function Navbar() {
+  const navRef = useRef();
 
-  const toggleMenu = () => setIsOpen(!isOpen);
+  const showNavbar = () => {
+    navRef.current.classList.toggle("responsive_nav");
+  };
 
   return (
-    <header className="text-white py-5">
-      <div className="container mx-auto flex justify-between items-center ">
-        {/* Logo */}
-        <NavLink to="/" className="text-2xl font-bold">
-          <img src={logo} alt="Padel Federation of Macedonia" />
+    <header>
+      <h3>
+        <NavLink>
+          <img src="/images/logo.svg" alt="" />
+        </NavLink>
+      </h3>
+
+      <nav ref={navRef}>
+        <NavLink onClick={showNavbar} className="nav-menu-logo hidden">
+          <img className="logo-menu" src="/images/logo.svg" alt="" />
         </NavLink>
 
-        {/* Hamburger Menu Button */}
-        <button
-          onClick={toggleMenu}
-          className="md:hidden text-xl focus:outline-none"
-          aria-label="Toggle Navigation"
-        >
-          {isOpen ? <FaTimes /> : <FaBars />}
-        </button>
+        <NavLink onClick={showNavbar} className={"nav-link"} to={"/wip"}>
+          What is Padel?
+        </NavLink>
+        <NavLink onClick={showNavbar} className={"nav-link"} to={"federation"}>
+          Federation
+        </NavLink>
+        <NavLink onClick={showNavbar} className={"nav-link"} to={"/news"}>
+          News and Media
+        </NavLink>
+        <h1 className="flex items-center">
+          <MdLanguage />
+          <span>EN/MK</span>
+        </h1>
 
-        {/* Navigation Links */}
-        <nav
-          className={`${
-            isOpen ? "block" : "hidden"
-          } absolute top-16 left-0 w-full  md:static md:w-auto md:flex md:items-center ${
-            isOpen ? "text-center" : ""
-          }`}
+        <button
+          className="nav-btn nav-close-btn flex ms-auto"
+          onClick={showNavbar}
         >
-          <ul
-            className= {`${
-              isOpen
-                ? "flex flex-col space-y-4 items-center"
-                : "md:flex md:space-x-4 md:ml-auto md:space-y-0"
-            }`} 
-          >
-            <li>
-              <NavLink
-                to="/wip"
-                className="block py-2 px-4 hover:text-gray-400"
-                onClick={() => setIsOpen(false)}
-              >
-                What is Padel?
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/federation"
-                className="block py-2 px-4 hover:text-gray-400"
-                onClick={() => setIsOpen(false)}
-              >
-                Federation
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/news"
-                className="block py-2 px-4 hover:text-gray-400 flex items-center"
-                onClick={() => setIsOpen(false)}
-              >
-                News
-              </NavLink>
-            </li>
-            <li className="block py-2 px-4 hover:text-gray-400 flex items-center">
-              EN/MKD
-            </li>
-          </ul>
-        </nav>
-      </div>
+          <h1>Menu</h1> <FaTimes />
+        </button>
+      </nav>
+      <button className="nav-btn" onClick={showNavbar}>
+        <FaBars />
+      </button>
     </header>
   );
-};
+}
 
-export default NavBar;
+export default Navbar;

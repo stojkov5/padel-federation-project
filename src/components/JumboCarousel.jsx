@@ -21,7 +21,7 @@ const slides = [
 ];
 
 const JumboCarousel = () => (
-  <Row justify="center">
+  <Row justify="center ">
     <Col span={20}>
       <Carousel autoplay arrows infinite={true}>
         {slides.map((slide, index) => (

@@ -82,7 +82,7 @@ const cards = [
     location: "Skopje",
     category: "Junior",
   },
-  // Add more cards as needed
+ 
 ];
 
 const TournamentCard = () => {

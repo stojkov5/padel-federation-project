@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
 body {
   background-color: #111c38;
 }
@@ -59,4 +59,15 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: 120%; /* 21.6px */
+}
+
+.federation-text {
+  color: var(--Ink-200, #ebebeb);
+  /* Desktop/Heading 3/Regular */
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 28.8px */
 }
