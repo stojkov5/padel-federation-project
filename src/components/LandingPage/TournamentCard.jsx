@@ -4,7 +4,8 @@ import { IoArrowUpCircleOutline } from "react-icons/io5";
 
 const cards = [
   {
-    image: "/images/Tournament/first-card.png",
+    class:"orange-card",
+    
     title: "National Padel ",
     type: "Championship",
     date: "Yearly, every August",
@@ -12,7 +13,7 @@ const cards = [
     category: "All",
   },
   {
-    image: "/images/Tournament/second-img.jpg",
+    class:"lblue-card",
     title: "National Club ",
     type: "League",
     date: "March-November",
@@ -20,7 +21,7 @@ const cards = [
     category: "All",
   },
   {
-    image: "/images/Tournament/third-img.jpg",
+    class:"purple-card",
     title: "National Junior ",
     type: "League",
     date: "March-November",
@@ -28,7 +29,7 @@ const cards = [
     category: "All",
   },
   {
-    image: "/images/Tournament/first-card.png",
+    class:"green-card",
     title: "Regional Open ",
     type: "Tournaments",
     date: "Every two months",
@@ -36,7 +37,7 @@ const cards = [
     category: "All",
   },
   {
-    image: "/images/Tournament/second-img.jpg",
+    class:"yellow-card",
     title: "National Veteran ",
     type: "Championship",
     date: "Every July",
@@ -44,7 +45,7 @@ const cards = [
     category: "Senior",
   },
   {
-    image: "/images/Tournament/third-img.jpg",
+    class:"dblue-card",
     title: "National Festival and ",
     type: "Exhibition Competitions",
     date: "Every May",
@@ -52,7 +53,7 @@ const cards = [
     category: "All",
   },
   {
-    image: "/images/Tournament/first-card.png",
+    class:"red-card",
     title: "International ",
     type: "Invitational Tournament",
     date: "Every September",
@@ -60,7 +61,7 @@ const cards = [
     category: "Top 8 and guests",
   },
   {
-    image: "/images/Tournament/second-img.jpg",
+    class:"pink-card",
     title: "Women's National ",
     type: "Padel Cup",
     date: "Every April",
@@ -68,14 +69,14 @@ const cards = [
     category: "Women",
   },
   {
-    image: "/images/Tournament/third-img.jpg",
+    class:"ddblue-card",
     title: "Mixed Doubles ",
     type: "Championship",
     date: "Every June",
     category: "Doubles-Male and Female",
   },
   {
-    image: "/images/Tournament/third-img.jpg",
+    class:"lgreen-card",
     title: "Regional youth ",
     type: "development camps",
     date: "June-August",
@@ -120,14 +121,9 @@ const TournamentCard = () => {
       <Row className="card-row" gutter={16}>
         {cards.map((card, index) => (
           <Col key={index} lg={7} xs={24}>
-            <Card className="card h-full relative overflow-hidden">
-              <img
-                className="card-img object-cover w-full h-full"
-                src={card.image}
-                alt=""
-              />
-              <div className="card-content w-full h-full absolute  left-0 top-0  p-3 m-0">
-                <div className="d-flex flex-col ">
+            <Card className={`card ${card.class} h-full relative overflow-hidden`}>
+              <div className="card-content w-full h-full  p-3 m-0">
+                <div className="d-flex flex-col w-full h-full justify-between ">
                   <h3 className="d-flex t-card-title justify-between">
                     {card.title} <IoArrowUpCircleOutline className="arrow" />
                   </h3>

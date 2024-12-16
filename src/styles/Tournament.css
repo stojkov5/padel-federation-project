@@ -1,3 +1,95 @@
+.orange-card {
+  border-radius: 24px;
+
+  border-radius: 24px;
+  border: 1px solid #ffbfc0;
+  background: linear-gradient(285deg, #111c38 0%, #943e00 75.3%),
+    url("/images/Tournament/first-card.png") center / cover no-repeat, #e21b0c !important;
+  background-blend-mode: hard-light, normal, normal;
+  box-shadow: 0px 29px 31.7px -8px rgba(147, 68, 0, 0.32);
+}
+.lblue-card {
+  border-radius: 24px;
+  border: 1px solid #ffbfc0;
+  background: linear-gradient(284deg, #111c38 1%, #05bfbf 84%),
+    url("/images/Tournament/second-img.jpg") 0px -116.799px / 100% 291.75% no-repeat,
+    #e21b0c !important;
+  background-blend-mode: hard-light, normal, normal;
+  box-shadow: 0px 29px 31.7px -8px rgba(0, 139, 147, 0.4);
+}
+.purple-card {
+  border-radius: 24px;
+  border: 1px solid #ffbfc0;
+  background: linear-gradient(284deg, #111c38 0.71%, #b300bc 72.98%),
+    url("/images/Tournament/third-img.jpg") 0px -148.465px / 100% 291.75% no-repeat,
+    #e21b0c !important;
+  background-blend-mode: hard-light, normal, normal;
+  box-shadow: 0px 29px 31.7px -8px rgba(108, 0, 130, 0.3);
+}
+.green-card {
+  border-radius: 24px;
+  border: 1px solid #ffbfc0;
+  background: linear-gradient(284deg, #111c38 0.71%, #00bf4d 83.71%),
+    url("/images/Tournament/second-img.jpg") 0px -116.799px / 100% 291.75% no-repeat,
+    #e21b0c !important;
+  background-blend-mode: hard-light, normal, normal;
+  box-shadow: 0px 29px 31.7px -8px rgba(0, 139, 147, 0.4);
+}
+.yellow-card {
+  border-radius: 24px;
+  border: 1px solid #ffbfc0;
+  background: linear-gradient(284deg, #111c38 0.71%, #aeb700 72.98%),
+    url("/images/Tournament/third-img.jpg") 0px -148.465px / 100% 291.75% no-repeat,
+    #e21b0c !important;
+  background-blend-mode: hard-light, normal, normal;
+  box-shadow: 0px 29px 31.7px -8px rgba(108, 0, 130, 0.3);
+}
+.dblue-card {
+  border-radius: 24px;
+  border: 1px solid #ffbfc0;
+  background: linear-gradient(285deg, #111c38 0%, #3900bf 75.3%),
+    url("/images/Tournament/first-card.png") center / cover no-repeat, #e21b0c !important;
+
+  background-blend-mode: hard-light, normal, normal;
+  box-shadow: 0px 29px 31.7px -8px rgba(147, 68, 0, 0.32);
+}
+.red-card {
+  border-radius: 24px;
+  border: 1px solid #ffbfc0;
+  background: linear-gradient(284deg, #111c38 0.71%, #b60507 83.71%),
+    url("/images/Tournament/second-img.jpg") 0px -116.799px / 100% 291.75% no-repeat,
+    #e21b0c !important;
+  background-blend-mode: hard-light, normal, normal;
+  box-shadow: 0px 29px 31.7px -8px rgba(0, 139, 147, 0.4);
+}
+.pink-card {
+  border-radius: 24px;
+  border: 1px solid #ffbfc0;
+  background: linear-gradient(285deg, #111c38 0%, #72006e 75.3%),
+    url("/images/Tournament/first-card.png") center / cover no-repeat, #e21b0c !important;
+
+  background-blend-mode: hard-light, normal, normal;
+  box-shadow: 0px 29px 31.7px -8px rgba(147, 68, 0, 0.32);
+}
+.ddblue-card {
+  border-radius: 24px;
+  border: 1px solid #ffbfc0;
+  background: linear-gradient(284deg, #111c38 0.71%, #051ebf 83.71%),
+    url("/images/Tournament/second-img.jpg") 0px -116.799px / 100% 291.75% no-repeat,
+    #e21b0c !important;
+  background-blend-mode: hard-light, normal, normal;
+  box-shadow: 0px 29px 31.7px -8px rgba(0, 139, 147, 0.4);
+}
+.lgreen-card {
+  border-radius: 24px;
+  border: 1px solid #ffbfc0;
+  background: linear-gradient(284deg, #111c38 0.71%, #00bca9 72.98%),
+    url("/images/Tournament/third-img.jpg") 0px -148.465px / 100% 291.75% no-repeat,
+    #e21b0c !important;
+  background-blend-mode: hard-light, normal, normal;
+  box-shadow: 0px 29px 31.7px -8px rgba(108, 0, 130, 0.3);
+}
+
 .component-title-line {
   display: flex;
   justify-content: space-between;
@@ -109,5 +201,3 @@
   background: rgba(0, 17, 17, 0.4);
   backdrop-filter: blur(4.550000190734863px);
 }
-
-
