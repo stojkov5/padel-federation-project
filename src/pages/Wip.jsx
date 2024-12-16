@@ -33,7 +33,7 @@ const Main = () => {
         </Col>
       </Row>
       <br />
-      <Row className="history-section" justify={"center"}>
+      <Row className="history-section mt-5" justify={"center"}>
         <Col span={20}>
           <History />
         </Col>
@@ -54,7 +54,7 @@ const Main = () => {
       <br />
       <Row className="gameplay-section" justify={"center"}>
         <Col span={20}>
-          <h1 className="page-title my-5 text-white">Basic Gameplay</h1>
+          
           <Gameplay />
         </Col>
       </Row>
