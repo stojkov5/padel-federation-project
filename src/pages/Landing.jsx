@@ -1,9 +1,9 @@
-import JumboCarousel from "../components/JumboCarousel";
-import Tournaments from "../components/Tournaments";
-import Clubs from "../components/Clubs";
-import Programs from "../components/Programs";
-import JoinUs from "../components/JoinUs";
-import Sponsors from "../components/Sponsors";
+import JumboCarousel from "../components/LandingPage/JumboCarousel";
+import Tournaments from "../components/LandingPage/Tournaments";
+import Clubs from "../components/LandingPage/Clubs";
+import Programs from "../components/LandingPage/Programs";
+import JoinUs from "../components/LandingPage/JoinUs";
+import Sponsors from "../components/LandingPage/Sponsors";
 const Landing = () => {
   return (
     <div>

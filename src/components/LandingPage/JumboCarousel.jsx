@@ -1,7 +1,7 @@
 import { IoArrowUpCircleOutline } from "react-icons/io5";
 
 import { Carousel, Button, Row, Col } from "antd";
-import "../styles/JumboCarousel.css";
+import "../../styles/JumboCarousel.css";
 const slides = [
   {
     heading: "PADEL",
@@ -16,7 +16,8 @@ const slides = [
   //   subHeading: "Padel in Macedonia",
   //   text: "Just Play, Have Fun, Enjoy the Game!",
   //   buttonText: "Join now",
-  //   image: "/images/logo.svg", // Background image for the second slide
+  //   imageDesktop: "/images/JumboCarouselImage/Carousel1-image.svg", // Desktop image
+  //   imageMobile: "/images/JumboCarouselImage/Carousel1-image-mb.svg", // Mobile image
   // },
 ];
 

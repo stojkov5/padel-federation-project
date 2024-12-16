@@ -3,10 +3,9 @@ import "../styles/Wip.css";
 import { Col, Row } from "antd";
 import History from "../components/WipPage/History";
 import Gameplay from "../components/WipPage/Gameplay";
-import JoinUs from "../components/JoinUs";
-import Sponsors from "../components/Sponsors";
+import JoinUs from "../components/LandingPage/JoinUs";
+import Sponsors from "../components/LandingPage/Sponsors";
 import ReactPlayer from "react-player";
-
 
 const Main = () => {
   return (
@@ -54,7 +53,6 @@ const Main = () => {
       <br />
       <Row className="gameplay-section" justify={"center"}>
         <Col span={20}>
-          
           <Gameplay />
         </Col>
       </Row>
@@ -62,7 +60,7 @@ const Main = () => {
       <JoinUs />
 
       <br />
-    <Sponsors />
+      <Sponsors />
     </div>
   );
 };

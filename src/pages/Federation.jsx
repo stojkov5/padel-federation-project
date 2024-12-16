@@ -1,7 +1,7 @@
 import LandingImage from "../components/FederationPage/LandingImage.jsx";
 import "../styles/Federation.css";
 import { IoArrowUpCircleOutline } from "react-icons/io5";
-import Sponsors from "../components/Sponsors";
+import Sponsors from "../components/LandingPage/Sponsors";
 const Federation = () => {
   return (
     <div className="d-flex flex-col">

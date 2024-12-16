@@ -1,4 +1,4 @@
-import "../styles/Programs.css";
+import "../../styles/Programs.css";
 import { Card, Row, Col, Typography } from "antd";
 import { IoArrowUpCircleOutline } from "react-icons/io5";
 

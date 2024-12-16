@@ -1,5 +1,5 @@
 import { Col, Row } from "antd";
-import "../styles/JoinUs.css";
+import "../../styles/JoinUs.css";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 const joinCards = [
@@ -21,7 +21,8 @@ const joinCards = [
 ];
 const JoinUs = () => {
   return (
-    <Row className="join-us-row"
+    <Row
+      className="join-us-row"
       justify="center"
       style={{ position: "relative" }}
     >
@@ -59,9 +60,7 @@ const JoinUs = () => {
                   src={card.image}
                 />
                 <Card.Body>
-                  <Button className={card.class} >
-                    {card.button}
-                  </Button>
+                  <Button className={card.class}>{card.button}</Button>
                 </Card.Body>
               </Card>
             </Col>

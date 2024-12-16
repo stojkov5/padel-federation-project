@@ -1,5 +1,5 @@
 import {Row, Col} from "antd";
-import "../styles/Sponsors.css";
+import "../../styles/Sponsors.css";
 const Sponsors = () => {
     return (
         <>

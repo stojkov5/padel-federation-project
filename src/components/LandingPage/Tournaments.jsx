@@ -1,5 +1,5 @@
 import {Row, Col} from "antd";
-import "../styles/Tournament.css";
+import "../../styles/Tournament.css";
 import TournamentCard from "./TournamentCard";
 
 const Tournaments = () => {

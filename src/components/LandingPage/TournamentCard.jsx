@@ -4,7 +4,7 @@ import { IoArrowUpCircleOutline } from "react-icons/io5";
 
 const cards = [
   {
-    image: "/images/first-card.png",
+    image: "/images/Tournament/first-card.png",
     title: "National Padel ",
     type: "Championship",
     date: "Yearly, every August",
@@ -12,7 +12,7 @@ const cards = [
     category: "All",
   },
   {
-    image: "/images/second-img.jpg",
+    image: "/images/Tournament/second-img.jpg",
     title: "National Club ",
     type: "League",
     date: "March-November",
@@ -20,7 +20,7 @@ const cards = [
     category: "All",
   },
   {
-    image: "/images/third-img.jpg",
+    image: "/images/Tournament/third-img.jpg",
     title: "National Junior ",
     type: "League",
     date: "March-November",
@@ -28,7 +28,7 @@ const cards = [
     category: "All",
   },
   {
-    image: "/images/first-card.png",
+    image: "/images/Tournament/first-card.png",
     title: "Regional Open ",
     type: "Tournaments",
     date: "Every two months",
@@ -36,7 +36,7 @@ const cards = [
     category: "All",
   },
   {
-    image: "/images/second-img.jpg",
+    image: "/images/Tournament/second-img.jpg",
     title: "National Veteran ",
     type: "Championship",
     date: "Every July",
@@ -44,7 +44,7 @@ const cards = [
     category: "Senior",
   },
   {
-    image: "/images/third-img.jpg",
+    image: "/images/Tournament/third-img.jpg",
     title: "National Festival and ",
     type: "Exhibition Competitions",
     date: "Every May",
@@ -52,7 +52,7 @@ const cards = [
     category: "All",
   },
   {
-    image: "/images/first-card.png",
+    image: "/images/Tournament/first-card.png",
     title: "International ",
     type: "Invitational Tournament",
     date: "Every September",
@@ -60,7 +60,7 @@ const cards = [
     category: "Top 8 and guests",
   },
   {
-    image: "/images/second-img.jpg",
+    image: "/images/Tournament/second-img.jpg",
     title: "Women's National ",
     type: "Padel Cup",
     date: "Every April",
@@ -68,21 +68,20 @@ const cards = [
     category: "Women",
   },
   {
-    image: "/images/third-img.jpg",
+    image: "/images/Tournament/third-img.jpg",
     title: "Mixed Doubles ",
     type: "Championship",
     date: "Every June",
     category: "Doubles-Male and Female",
   },
   {
-    image: "/images/third-img.jpg",
+    image: "/images/Tournament/third-img.jpg",
     title: "Regional youth ",
     type: "development camps",
     date: "June-August",
     location: "Skopje",
     category: "Junior",
   },
- 
 ];
 
 const TournamentCard = () => {
@@ -129,19 +128,19 @@ const TournamentCard = () => {
               />
               <div className="card-content w-full h-full absolute  left-0 top-0  p-3 m-0">
                 <div className="d-flex flex-col ">
-                <h3 className="d-flex t-card-title justify-between">
-                  {card.title} <IoArrowUpCircleOutline className="arrow" />
-                </h3>
-                <h3 className="t-card-title">{card.type}</h3>
-                <div className=" blur-background ">
-                  <span className="t-card-date  ">{card.date}</span>
-                </div>
-          
-                <p className="text-right t-card-cat ">Category</p>
-                <div className="d-flex justify-between">
-                  <p className="t-card-location">{card.location}</p>
-                  <p className="t-card-category"> {card.category} </p>
-                </div>
+                  <h3 className="d-flex t-card-title justify-between">
+                    {card.title} <IoArrowUpCircleOutline className="arrow" />
+                  </h3>
+                  <h3 className="t-card-title">{card.type}</h3>
+                  <div className=" blur-background ">
+                    <span className="t-card-date  ">{card.date}</span>
+                  </div>
+
+                  <p className="text-right t-card-cat ">Category</p>
+                  <div className="d-flex justify-between">
+                    <p className="t-card-location">{card.location}</p>
+                    <p className="t-card-category"> {card.category} </p>
+                  </div>
                 </div>
               </div>
             </Card>
