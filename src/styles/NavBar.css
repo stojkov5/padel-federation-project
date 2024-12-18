@@ -1,10 +1,6 @@
 header {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   height: 80px;
-  padding: 0 2rem;
   z-index: 999;
   background: linear-gradient(
     180deg,
@@ -12,6 +8,12 @@ header {
     rgba(67, 96, 174, 0.1232) 100%
   );
   color: white;
+}
+.navbar {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .nav-link {
@@ -31,7 +33,7 @@ header .nav-btn {
   border: none;
   outline: none;
   color: white;
-  visibility: hidden;
+  display: none;
   opacity: 0;
   font-size: 1.8rem;
 }
@@ -45,7 +47,7 @@ nav {
 
 @media only screen and (max-width: 1024px) {
   header .nav-btn {
-    visibility: visible;
+    display: flex;
     opacity: 1;
   }
   .logo-menu {
@@ -54,7 +56,6 @@ nav {
   }
 
   header nav {
-    
     position: fixed;
     top: -100vh;
     left: 0;

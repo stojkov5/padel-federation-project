@@ -3,16 +3,16 @@ import "../../styles/NewsComponent.css";
 import { Link } from "react-router";
 const NewsComponent = () => {
   return (
-    <div className="newsComponent-container p-5 mb-5 text-white">
+    <div className="newsComponent-container py-5  mb-5 text-white">
       <Row justify={"center"} className="mb-4">
-        <Col xs={24} lg={20}>
+        <Col span={20}>
           <h2 className="text-white gallery-h1" id="gallery">
             News
           </h2>
         </Col>
       </Row>
       <Row className="padel-court" justify={"center"}>
-        <Col xs={24} lg={20}>
+        <Col span={20}>
           <Row justify={"center"}>
             <Col className="p-3 terrain-left relative" xs={24} lg={4}></Col>
             <Col className="middle" xs={24} lg={16}>

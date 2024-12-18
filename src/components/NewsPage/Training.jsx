@@ -6,7 +6,7 @@ import Programs from "../LandingPage/Programs";
 const Training = () => {
   return (
     <>
-      <div className="training-container p-5 mb-5 text-white">
+      <div className="training-container py-5 mb-5 text-white">
         <Row justify={"center"} className="mb-4">
           <Col xs={24} lg={20}>
             <h2 className="text-white gallery-h1" id="gallery">

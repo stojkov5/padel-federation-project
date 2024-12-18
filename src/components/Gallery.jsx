@@ -31,9 +31,9 @@ const slides = [
 ];
 const Gallery = () => {
   return (
-    <div className="gallery-container p-5">
+    <div className="gallery-container py-5">
       <Row justify={"center"} className="mb-4">
-        <Col xs={24} lg={20}>
+        <Col  span={20}>
           <h2 className="text-white gallery-h1" id="gallery">
             Gallery
           </h2>
@@ -65,10 +65,11 @@ const Gallery = () => {
         </Col>
       </Row>
       <Row className="mobile-version hidden  " justify="center">
-        <Col span={24}>
+        <Col span={20}>
           <Carousel className="" autoplay arrows infinite={true}>
             {slides.map((slide, index) => (
-              <NavLink to={slide.linkLocation}
+              <NavLink
+                to={slide.linkLocation}
                 key={index}
                 className={`gallery-carousel ${slide.imageMobile}`}
               >
