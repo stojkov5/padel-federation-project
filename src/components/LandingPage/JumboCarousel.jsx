@@ -26,13 +26,13 @@ const JumboCarousel = () => (
     <Col span={20}>
       <Carousel autoplay arrows infinite={true}>
         {slides.map((slide, index) => (
-          <div key={index} className="carousel-slide">
+          <div key={index} className="jumbo-carousel-slide">
             <picture>
               <source srcSet={slide.imageMobile} media="(max-width: 768px)" />
-              <img className="carousel-image" src={slide.imageDesktop} />
+              <img className="jumbo-carousel-image" src={slide.imageDesktop} />
             </picture>
 
-            <div className="carousel-card">
+            <div className="jumbo-carousel-card">
               <h2 className="jumbo-carousel-title">{slide.subHeading}</h2>
               <p className="jumbo-carousel-text">{slide.text}</p>
               <Button

@@ -1,7 +1,12 @@
+import Gallery from "../components/Gallery";
+import NewsComponent from "../components/NewsPage/NewsComponent";
+import Sponsors from "../components/LandingPage/Sponsors";
 const News = () => {
   return (
     <div>
-      <h1>News</h1>
+      <NewsComponent />
+      <Gallery />
+      <Sponsors />
     </div>
   );
 };

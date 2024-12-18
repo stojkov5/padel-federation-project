@@ -7,7 +7,7 @@ import { FaTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className=" footer">
+    <div className=" footer p-5">
       <Row justify={"center"} className="footer-row">
         <Col className="h-full footer-col" span={20}>
           <Row className="padding-footer" justify={"center"}>
