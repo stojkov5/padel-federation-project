@@ -64,7 +64,7 @@ const Gallery = () => {
           </div>
         </Col>
       </Row>
-      <Row className="mobile-version hidden " justify="center">
+      <Row className="mobile-version hidden  " justify="center">
         <Col span={24}>
           <Carousel className="" autoplay arrows infinite={true}>
             {slides.map((slide, index) => (
