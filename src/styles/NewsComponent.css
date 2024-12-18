@@ -21,22 +21,22 @@
       rgba(0, 0, 0, 0.3) 0%,
       rgba(0, 0, 0, 0.3) 100%
     ),
-    url("images/NewsComponentImages/Image-1.png") lightgray 50% / cover
+    url("/images/NewsComponentImages/Image-1.png") lightgray 50% / cover
       no-repeat;
 }
 
 .news-second-card {
   border-bottom: 6px solid #fff;
-  background: url("images/NewsComponentImages/Image-2.jpg") lightgray 50% /
+  background: url("/images/NewsComponentImages/Image-2.jpg") lightgray 50% /
     cover no-repeat;
 }
 .news-third-card {
   border-right: 6px solid #fff;
-  background: url("images/NewsComponentImages/image-4.jpg") lightgray 50% /
+  background: url("/images/NewsComponentImages/image-4.jpg") lightgray 50% /
     cover no-repeat;
 }
 .news-fourth-card {
-  background: url("images/NewsComponentImages/image-4.jpg") lightgray 50% /
+  background: url("/images/NewsComponentImages/image-4.jpg") lightgray 50% /
     cover no-repeat;
 }
 .news-card-text {
@@ -78,5 +78,4 @@
     height: 30vh !important;
     border-right: 6px solid #fff;
   }
-  
 }
