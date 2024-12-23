@@ -5,7 +5,7 @@ import { IoArrowUpCircleOutline } from "react-icons/io5";
 const { Title, Paragraph } = Typography;
 const Programs = () => {
   return (
-    <Row justify={"center"}>
+    <Row data-aos="fade-up" justify={"center"}>
       <Col span={20}>
         <Row gutter={[24, 24]}>
           <Col xs={24} md={8}>

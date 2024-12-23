@@ -110,7 +110,7 @@ const TournamentCard = () => {
   };
 
   return (
-    <div
+    <div data-aos="fade-right"
       className="scroll-container"
       ref={scrollContainerRef}
       onMouseDown={onMouseDown}

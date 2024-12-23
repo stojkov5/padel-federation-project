@@ -6,7 +6,7 @@ const Tournaments = () => {
     return (
         <>
         
-            <Row className="justify-center" style={{background: "white", padding: "2rem 0"}}>
+            <Row data-aos="fade-up" className="justify-center" style={{background: "white", padding: "2rem 0"}}>
                 <Col className="component-title-line mb-3" span={20} style={{color: "black"}}>
                     <h1 className="page-titles">Tournaments</h1>
                     <span className="see-all">See all</span>

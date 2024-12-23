@@ -6,12 +6,15 @@ import { AiFillInstagram } from "react-icons/ai";
 import { FaTwitter } from "react-icons/fa6";
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
-    <div className=" footer p-5">
+    <div data-aos="flip-right" className=" footer p-5 my-5">
       <Row justify={"center"} className="footer-row">
         <Col className="h-full footer-col" span={20}>
           <Row className="padding-footer" justify={"center"}>
-            <Col xs={24} lg={8} className="footer-columns">
+            <Col xs={20} lg={8} className="footer-columns">
               <ul className="footer-list">
                 <li >
                   <img src="/images/FooterLogo.svg" alt="" />
@@ -23,32 +26,32 @@ const Footer = () => {
                 <li className="footer-link">info@padelflip.mk</li>
               </ul>
             </Col>
-            <Col xs={24} lg={8} className="footer-columns">
+            <Col xs={20} lg={8} className="footer-columns">
               <ul className="footer-list">
                 <li className="footer-title">Menu</li>
                 <li>
-                  <Link className="footer-link" to="/wip">
+                  <Link onClick={scrollToTop} className="footer-link" to="/wip">
                     What is Padel?
                   </Link>
                 </li>
                 <li>
-                  <Link className="footer-link" to="/federation">
+                  <Link onClick={scrollToTop} className="footer-link" to="/federation">
                     Federation
                   </Link>
                 </li>
                 <li>
-                  <Link className="footer-link" to="#clubs">
+                  <Link onClick={scrollToTop} className="footer-link" to="#clubs">
                     Clubs
                   </Link>
                 </li>
                 <li>
-                  <Link className="footer-link" to="/news">
+                  <Link onClick={scrollToTop} className="footer-link" to="/news">
                     News and Media
                   </Link>
                 </li>
               </ul>
             </Col>
-            <Col xs={24} lg={8} className="footer-columns">
+            <Col xs={20} lg={8} className="footer-columns">
               <ul className="footer-list">
                 <li className="footer-title">Documentations</li>
                 <li className="footer-link">Programs</li>
@@ -89,7 +92,7 @@ const Footer = () => {
             </Col>
           </Row>
           <Row justify={"center"}>
-            <Col span={20}>
+            <Col span={20} className="copyright">
               <p style={{ textAlign: "center" }}>
                 Copyright © 2024 PFM | PadelFip Federation of Macedonia | All
                 rights reserved | Terms and conditions | Privacy policy

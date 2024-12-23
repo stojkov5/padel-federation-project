@@ -21,7 +21,7 @@ const joinCards = [
 ];
 const JoinUs = () => {
   return (
-    <Row
+    <Row data-aos="fade-up"
       className="join-us-row"
       justify="center"
       style={{ position: "relative" }}
@@ -39,7 +39,7 @@ const JoinUs = () => {
             alt="Mobile version"
           />
           <div className="card-text">
-            <h1 className="page-titles text-white">Join Us</h1>
+            <h1 className="page-titles  yellow-border text-white">Join Us</h1>
             <p className="join-card-text">
               Join the Padel Federation of Macedonia and be part of an
               energetic, welcoming community that’s passionate about padel. Dive
