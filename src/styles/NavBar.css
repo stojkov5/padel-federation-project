@@ -1,6 +1,7 @@
+/* Header Styling */
 header {
   width: 100%;
-  height: 80px;
+ 
   z-index: 999;
   background: linear-gradient(
     180deg,
@@ -9,6 +10,8 @@ header {
   );
   color: white;
 }
+
+/* Navbar Container */
 .navbar {
   margin: 0;
   display: flex;
@@ -16,16 +19,38 @@ header {
   justify-content: space-between;
 }
 
+/* Logo Styling */
+.navbar img {
+  height: 10%;
+}
+
+.nav-menu-logo.hidden {
+  display: none;
+}
+
+/* Navigation Links */
 .nav-link {
   text-align: center;
   margin: 0 1rem;
   padding: 8px 12px;
   text-decoration: none;
   border-radius: 23px;
-  background: rgba(205, 14, 18, 0.53);
-  backdrop-filter: blur(2px);
+  background: transparent;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.nav-link:hover {
+  background: rgba(205, 14, 18, 0.53);
+  color: white;
+}
+
+/* Active Link Styling */
+.active-link {
+  background: rgba(205, 14, 18, 0.53);
+}
+
+/* Navbar Button */
 header .nav-btn {
   padding: 5px;
   cursor: pointer;
@@ -38,6 +63,7 @@ header .nav-btn {
   font-size: 1.8rem;
 }
 
+/* Navbar Items */
 header div,
 nav {
   margin-left: auto;
@@ -45,11 +71,22 @@ nav {
   align-items: center;
 }
 
+/* Language Toggle */
+.flex.items-center {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: white;
+}
+
+/* Responsive Design */
 @media only screen and (max-width: 1024px) {
   header .nav-btn {
     display: flex;
     opacity: 1;
   }
+
   .logo-menu {
     display: block !important;
     width: 30%;
@@ -67,13 +104,15 @@ nav {
     justify-content: center;
     gap: 1.5rem;
     background: rgba(8, 15, 34, 0.8);
-    backdrop-filter: blur(7.849999904632568px);
+    backdrop-filter: blur(7.85px);
     z-index: 999;
     transition: 1s;
   }
+
   header nav a {
     text-align: center;
     width: 90%;
+    font-size: 1.5rem;
   }
 
   header .responsive_nav {
@@ -93,7 +132,7 @@ nav {
     align-items: center;
   }
 
-  nav a {
-    font-size: 1.5rem;
+  .nav-link {
+    font-size: 1.2rem;
   }
 }

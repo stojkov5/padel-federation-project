@@ -1,42 +1,66 @@
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import "../styles/NavBar.css";
-import { NavLink } from "react-router-dom";
 import { MdLanguage } from "react-icons/md";
 import { Row, Col } from "antd";
+import { NavLink, useLocation } from "react-router-dom";
+import "../styles/NavBar.css";
+
 function Navbar() {
   const navRef = useRef();
+  const location = useLocation(); // Get the current route
 
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
   };
+
+  const isLandingPage = location.pathname === "/"; // Check if on Landing Page
 
   return (
     <header>
       <Row justify={"center"}>
         <Col className="navbar" span={20}>
           <h3>
-            <NavLink>
-              <img src="/images/logo.svg" alt="" />
+            <NavLink to="/">
+              <img src="/images/logo.svg" alt="Logo" />
             </NavLink>
           </h3>
 
           <nav ref={navRef}>
             <NavLink onClick={showNavbar} className="nav-menu-logo hidden">
-              <img className="logo-menu" src="/images/logo.svg" alt="" />
+              <img className="logo-menu" src="/images/logo.svg" alt="Logo" />
             </NavLink>
 
-            <NavLink onClick={showNavbar} className={"nav-link"} to={"/wip"}>
+            <NavLink
+              onClick={showNavbar}
+              className={
+                isLandingPage
+                  ? "nav-link active-link"
+                  : ({ isActive }) => (isActive ? "nav-link active-link" : "nav-link")
+              }
+              to="/wip"
+            >
               What is Padel?
             </NavLink>
             <NavLink
               onClick={showNavbar}
-              className={"nav-link"}
-              to={"federation"}
+              className={
+                isLandingPage
+                  ? "nav-link active-link"
+                  : ({ isActive }) => (isActive ? "nav-link active-link" : "nav-link")
+              }
+              to="/federation"
             >
               Federation
             </NavLink>
-            <NavLink onClick={showNavbar} className={"nav-link"} to={"/news"}>
+            <NavLink
+              onClick={showNavbar}
+              className={
+                isLandingPage
+                  ? "nav-link active-link"
+                  : ({ isActive }) => (isActive ? "nav-link active-link" : "nav-link")
+              }
+              to="/news"
+            >
               News and Media
             </NavLink>
             <h1 className="flex items-center">
