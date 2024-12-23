@@ -4,7 +4,7 @@ import { MdLanguage } from "react-icons/md";
 import { Row, Col } from "antd";
 import { NavLink, useLocation } from "react-router-dom";
 import "../styles/NavBar.css";
-import Headroom from "react-headroom";
+
 
 function Navbar() {
   const navRef = useRef();
@@ -17,7 +17,7 @@ function Navbar() {
   const isLandingPage = location.pathname === "/";
 
   return (
-    <Headroom>
+    
       <header>
         <Row justify={"center"}>
           <Col className="navbar" span={20}>
@@ -86,7 +86,7 @@ function Navbar() {
           </Col>
         </Row>
       </header>
-    </Headroom>
+   
   );
 }
 
