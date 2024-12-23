@@ -39,6 +39,7 @@ const Main = () => {
       </Row>
       <br />
       <Row className="video-section" justify={"center"}>
+        
         <Col span={20}>
           <h1 className="page-title text-black my-5">How to Play Padel</h1>
           <div className="video-frame flex justify-center items-center">
