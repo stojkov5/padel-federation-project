@@ -94,8 +94,7 @@ const Footer = () => {
           <Row justify={"center"}>
             <Col span={20} className="copyright">
               <p style={{ textAlign: "center" }}>
-                Copyright © 2024 PFM | PadelFip Federation of Macedonia | All
-                rights reserved | Terms and conditions | Privacy policy
+                Designed and Developed by the students of <Link to={"https://creativehub.mk"} >Creative Hub Macedonia</Link>
               </p>
             </Col>
           </Row>
