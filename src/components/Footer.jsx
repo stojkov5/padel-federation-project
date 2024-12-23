@@ -92,9 +92,9 @@ const Footer = () => {
             </Col>
           </Row>
           <Row justify={"center"}>
-            <Col span={20} className="copyright">
+            <Col span={20} className="copyright pb-2">
               <p style={{ textAlign: "center" }}>
-                Designed and Developed by the students of <Link to={"https://creativehub.mk"} >Creative Hub Macedonia</Link>
+                Copyright &#169; 2024 PFM | Designed and Developed by the students of <Link to={"https://creativehub.mk"} >Creative Hub Macedonia</Link>
               </p>
             </Col>
           </Row>
