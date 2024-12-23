@@ -54,6 +54,34 @@
   font-weight: 400;
   line-height: 120%; /* 21.6px */
 }
+.ps-text {
+  color: #fff;
+
+  /* Desktop/Body text/300/Regular */
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.975rem + 0.125vw, 1.125rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 21.6px */
+}
+.source {
+  border-left: 10px solid var(--Solid-Secondary-Original, #fde834);
+  color: var(--Ink-100, #fff);
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+  padding: 0px 24px;
+}
 @media (max-width: 992px) {
   .terrain-left {
     height: 20vh !important;

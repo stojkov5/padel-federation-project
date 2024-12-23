@@ -2,6 +2,12 @@
   border-radius: 46px;
   background: linear-gradient(270deg, #fff 0%, rgba(255, 255, 255, 0) 82.76%);
 }
+.desktop-version {
+  display: flex !important;
+}
+.mobile-version {
+  display: none !important;
+}
 .gallery-h1 {
   color: var(--Ink-100, #fff);
   font-family: Montserrat;
@@ -143,3 +149,24 @@
     url("/images/TrainingImages/TrainingImage-10.png") 50% / cover no-repeat;
   background-blend-mode: multiply, normal;
 }
+
+.training-carousel {
+  border-radius: 32px;
+  border: 0.944px solid var(--Gradients-Cards-stroke, #fde834);
+  width: 100%;
+  height: 50vh;
+  padding: 24px;
+}
+
+@media (max-width: 992px) {
+  .gallery-container {
+    background: none !important;
+  }
+  .desktop-version {
+    display: none !important;
+  }
+  .mobile-version {
+    display: flex !important;
+  }
+}
+
