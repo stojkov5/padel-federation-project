@@ -86,6 +86,9 @@ nav {
     display: flex;
     opacity: 1;
   }
+  .navbar img {
+    height: unset;
+  }
 
   .logo-menu {
     display: block !important;
