@@ -6,6 +6,7 @@ body {
   background-color: #111c38;
 }
 
+
 .jumbo-carousel-title {
   color: var(--Ink-100, #fff);
   font-family: Montserrat;
@@ -48,20 +49,19 @@ body {
   font-size: clamp(1.5rem, 1.4rem + 0.5vw, 2rem) !important;
   font-style: normal;
   font-weight: 800 !important;
-  line-height: 120%; /* 38.4px */
+  line-height: 120%; 
 }
 .yellow-border {
   border-left: 10px solid var(--Solid-Secondary-Original, #fde834);
 }
 .see-all {
   color: var(--Solid-Primary-Original, #f82428);
-  /* Desktop/Body text/300/SemiBold */
   font-family: Montserrat;
   font-size: 0.875rem;
   font-size: clamp(0.875rem, 0.825rem + 0.25vw, 1.125rem);
   font-style: normal;
   font-weight: 600;
-  line-height: 120%; /* 21.6px */
+  line-height: 120%; 
 }
 
 .federation-text {

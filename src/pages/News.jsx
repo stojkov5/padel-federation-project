@@ -1,4 +1,4 @@
-import Gallery from "../components/Gallery";
+import Gallery from "../components/NewsPage/Gallery";
 import NewsComponent from "../components/NewsPage/NewsComponent";
 import Sponsors from "../components/LandingPage/Sponsors";
 import Clubs from "../components/LandingPage/Clubs";

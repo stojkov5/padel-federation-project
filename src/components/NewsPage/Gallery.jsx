@@ -1,4 +1,4 @@
-import "../styles/Gallery.css";
+import "../../styles/Gallery.css";
 import { Row, Col } from "antd";
 import { NavLink } from "react-router-dom";
 import { Carousel } from "antd";
@@ -42,7 +42,7 @@ const Gallery = () => {
       <Row className="desktop-version mb-5" justify={"center"}>
         <Col span={20} className="text-white">
           <div className="grid grid-cols-4 grid-rows-6 gap-4">
-            <NavLink to="/training" className="row-span-4 gallery-training">
+            <NavLink to="/news/training" className="row-span-4 gallery-training">
               <h1 className="gallery-title">Training</h1>
             </NavLink>
 

@@ -7,12 +7,14 @@ import Sponsors from "../components/LandingPage/Sponsors";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+
 const Landing = () => {
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 1000,
     });
   }, []);
+
   return (
     <div>
       <JumboCarousel />

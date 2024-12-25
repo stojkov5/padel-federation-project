@@ -22,6 +22,14 @@ const routes = createBrowserRouter([
         element: <News />,
       },
       {
+        path: "/news/training",
+        element: <Training />,
+      },
+      {
+        path: "/news/play-styles",
+        element: <PlayingStyles />,
+      },
+      {
         path: "/federation",
         element: <Federation />,
       },
@@ -29,14 +37,7 @@ const routes = createBrowserRouter([
         path: "/wip",
         element: <Wip />,
       },
-      {
-        path: "/training",
-        element: <Training />,
-      },
-      {
-        path: "/play-styles",
-        element: <PlayingStyles />,
-      }
+      
     ],
   },
 ]);

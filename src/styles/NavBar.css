@@ -2,13 +2,10 @@
 
 header {
   width: 100%;
-
+  position: fixed;
+  top: 0;
   z-index: 999;
-  background: linear-gradient(
-    180deg,
-    rgba(5, 18, 52, 0.77) 0%,
-    rgba(67, 96, 174, 0.1232) 100%
-  );
+  background: linear-gradient(0deg, rgba(17, 28, 56, 0) 0%, #111c38 69.34%);
   color: white;
 }
 
@@ -31,6 +28,14 @@ header {
 
 /* Navigation Links */
 .nav-link {
+  color: var(--Ink-100, #fff);
+
+  /* Desktop/Body text/100/Regular */
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
   text-align: center;
   margin: 0 1rem;
   padding: 8px 12px;
@@ -107,8 +112,9 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
+    opacity: 1;
     background: rgba(8, 15, 34, 0.8);
-    backdrop-filter: blur(7.85px);
+    backdrop-filter: blur(7.849999904632568px);
     z-index: 999;
     transition: 1s;
   }

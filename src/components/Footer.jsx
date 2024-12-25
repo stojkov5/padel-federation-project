@@ -1,6 +1,6 @@
 import "../styles/Footer.css";
 import { Row, Col } from "antd";
-import { Link } from "react-router";
+import { Link, useLocation } from "react-router";
 import { SiFacebook, SiLinkedin, SiTiktok, SiYoutube } from "react-icons/si";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaTwitter } from "react-icons/fa6";
@@ -9,6 +9,9 @@ const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+  const location = useLocation();
+  const isLandingPage = location.pathname === "/";
+  
   return (
     <div data-aos="flip-right" className=" footer p-5 my-5">
       <Row justify={"center"} className="footer-row">
@@ -16,7 +19,7 @@ const Footer = () => {
           <Row className="padding-footer" justify={"center"}>
             <Col xs={20} lg={8} className="footer-columns">
               <ul className="footer-list">
-                <li >
+                <li>
                   <img src="/images/FooterLogo.svg" alt="" />
                 </li>
                 <li className="footer-link">
@@ -30,22 +33,56 @@ const Footer = () => {
               <ul className="footer-list">
                 <li className="footer-title">Menu</li>
                 <li>
-                  <Link onClick={scrollToTop} className="footer-link" to="/wip">
+                  <Link
+                    onClick={scrollToTop}
+                    className={
+                      isLandingPage
+                        ? "footer-link "
+                        : location.pathname === "/wip"
+                        ? "footer-active-link"
+                        : "footer-link"
+                    }
+                    to="/wip"
+                  >
                     What is Padel?
                   </Link>
                 </li>
                 <li>
-                  <Link onClick={scrollToTop} className="footer-link" to="/federation">
+                  <Link
+                    onClick={scrollToTop}
+                    className={
+                      isLandingPage
+                        ? "footer-link"
+                        : location.pathname === "/federation"
+                        ? "footer-active-link"
+                        : "footer-link"
+                    }
+                    to="/federation"
+                  >
                     Federation
                   </Link>
                 </li>
                 <li>
-                  <Link onClick={scrollToTop} className="footer-link" to="#clubs">
+                  <Link
+                    onClick={scrollToTop}
+                    className="footer-link"
+                     to="#clubs"
+                  >
                     Clubs
                   </Link>
                 </li>
                 <li>
-                  <Link onClick={scrollToTop} className="footer-link" to="/news">
+                  <Link
+                    onClick={scrollToTop}
+                    className={
+                      isLandingPage
+                        ? "footer-link "
+                        : location.pathname === "/news"
+                        ? "footer-active-link"
+                        : "footer-link"
+                    }
+                    to="/news"
+                  >
                     News and Media
                   </Link>
                 </li>
@@ -94,7 +131,11 @@ const Footer = () => {
           <Row justify={"center"}>
             <Col span={20} className="copyright pb-2">
               <p style={{ textAlign: "center" }}>
-                Copyright &#169; 2024 PFM | Designed and Developed by the students of <Link to={"https://creativehub.mk"} >Creative Hub Macedonia</Link>
+                Copyright &#169; 2024 PFM | Designed and Developed by the
+                students of{" "}
+                <Link to={"https://creativehub.mk"}>
+                  Creative Hub Macedonia
+                </Link>
               </p>
             </Col>
           </Row>

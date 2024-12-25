@@ -3,6 +3,9 @@
   font-size: 2rem;
   flex-shrink: 0;
 }
+.jumbocarousel-container{
+  margin-top: 5%;
+}
 
 .jumbo-carousel-slide {
   overflow: hidden;

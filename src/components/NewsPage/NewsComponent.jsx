@@ -23,7 +23,7 @@ const NewsComponent = () => {
                   </h1>
                 </Col>
                 <Col className="p-3 news-second-card" span={12}>
-                  <Link to={"/play-styles"} className="news-card-text w-full h-full">
+                  <Link to={"/news/play-styles"} className="news-card-text w-full h-full">
                     Differences in playing style between Premier Padel and A1
                     Padel
                   </Link>

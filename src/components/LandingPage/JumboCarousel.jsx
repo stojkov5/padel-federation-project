@@ -22,7 +22,7 @@ const slides = [
 ];
 
 const JumboCarousel = () => (
-  <Row className="mb-5" justify="center ">
+  <Row className="mb-5 jumbocarousel-container" justify="center ">
     <Col span={20}>
       <Carousel autoplay arrows infinite={true}>
         {slides.map((slide, index) => (
@@ -32,7 +32,7 @@ const JumboCarousel = () => (
               <img className="jumbo-carousel-image" src={slide.imageDesktop} />
             </picture>
 
-            <div className="jumbo-carousel-card">
+            <div className="jumbo-carousel-card py-5">
               <h2 className="jumbo-carousel-title">{slide.subHeading}</h2>
               <p className="jumbo-carousel-text">{slide.text}</p>
               <Button

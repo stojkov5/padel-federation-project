@@ -56,6 +56,19 @@
   text-underline-offset: auto;
   text-underline-position: from-font;
 }
+.footer-active-link {
+  font-weight: 700;
+  color: var(--Solid-Primary-Original, #f82428);
+  text-decoration-line: underline !important;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+.footer-active-link:hover {
+  color: var(--Solid-Primary-Original, #f82428);
+}
 .footer-link:active {
   color: var(--Solid-Primary-Original, #f82428) !important;
 
