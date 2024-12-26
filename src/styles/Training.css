@@ -1,5 +1,5 @@
 .training-container {
-  margin-top: 5%;
+  margin-top: 5% !important;
   border-radius: 46px;
   background: linear-gradient(270deg, #fff 0%, rgba(255, 255, 255, 0) 82.76%);
 }
@@ -160,8 +160,11 @@
 }
 
 @media (max-width: 992px) {
-  .gallery-container {
-    background: none !important;
+
+  .training-container {
+    margin-top: 10% !important;
+    border-radius: 46px;
+    background: unset !important;
   }
   .desktop-version {
     display: none !important;
@@ -170,4 +173,3 @@
     display: flex !important;
   }
 }
-

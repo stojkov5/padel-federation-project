@@ -6,7 +6,7 @@ const slides = [
   {
     subHeading: "Training",
     imageMobile: "training",
-    linkLocation: "/training",
+    linkLocation: "/news/training",
   },
   {
     subHeading: "Players",
