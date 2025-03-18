@@ -11,7 +11,7 @@ const Footer = () => {
   };
   const location = useLocation();
   const isLandingPage = location.pathname === "/";
-  
+
   return (
     <div data-aos="flip-right" className=" footer p-5 my-5">
       <Row justify={"center"} className="footer-row">
@@ -23,10 +23,11 @@ const Footer = () => {
                   <img src="/images/FooterLogo.svg" alt="" />
                 </li>
                 <li className="footer-link">
-                  ul.Kuzman Josifovski <br /> br.22/14 Skopje 1000,
+                  Luj Paster
+                  <br />1 Skopje 1000,
                 </li>
                 <li className="  footer-link">mob:077 123 456</li>
-                <li className="footer-link">info@padelflip.mk</li>
+                <li className="footer-link">contact@padelfederation.mk</li>
               </ul>
             </Col>
             <Col xs={20} lg={8} className="footer-columns">
@@ -66,7 +67,7 @@ const Footer = () => {
                   <Link
                     onClick={scrollToTop}
                     className="footer-link"
-                     to="#clubs"
+                    to="#clubs"
                   >
                     Clubs
                   </Link>
@@ -91,7 +92,21 @@ const Footer = () => {
             <Col xs={20} lg={8} className="footer-columns">
               <ul className="footer-list">
                 <li className="footer-title">Documentations</li>
-                <li className="footer-link">Programs</li>
+                <li className="footer-link">
+                  <Link
+                    onClick={scrollToTop}
+                    className={
+                      isLandingPage
+                        ? "footer-link"
+                        : location.pathname === "/program"
+                        ? "footer-active-link"
+                        : "footer-link"
+                    }
+                    to="/program"
+                  >
+                    Programs
+                  </Link>
+                </li>
                 <li className="footer-link">Contact us</li>
                 <li className="footer-link">Status of Federation</li>
                 <li className="footer-link">License of Federation</li>
@@ -102,14 +117,33 @@ const Footer = () => {
             <Col span={10}>
               <div className="footer-socials">
                 <span>
-                  <SiFacebook />
+                  <Link
+                    to={
+                      "https://www.facebook.com/profile.php?id=61562298045963"
+                    }
+                    target="_blank"
+                  >
+                    <SiFacebook />
+                  </Link>
                 </span>
 
                 <span>
-                  <AiFillInstagram />
+                  <Link
+                    to={"https://www.instagram.com/padelfederation.mk/"}
+                    target="_blank"
+                  >
+                    <AiFillInstagram />
+                  </Link>
                 </span>
                 <span>
-                  <SiLinkedin />
+                  <Link
+                    to={
+                      "https://www.linkedin.com/company/padel-macedonia/?viewAsMember=true"
+                    }
+                    target="_blank"
+                  >
+                    <SiLinkedin />
+                  </Link>
                 </span>
                 <span>
                   <SiTiktok />

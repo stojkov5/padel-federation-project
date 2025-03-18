@@ -7,7 +7,7 @@ import Wip from "./pages/Wip";
 import Layout from "./layout/Layout";
 import Training from "./components/NewsPage/Training";
 import PlayingStyles from "./components/NewsPage/PlayingStyles";
-
+import OurProgram from "./components/OurProgramPage/OurProgram";
 const routes = createBrowserRouter([
   {
     path: "/",
@@ -37,6 +37,10 @@ const routes = createBrowserRouter([
         path: "/wip",
         element: <Wip />,
       },
+      {
+        path:"/program",
+        element:<OurProgram/>
+      }
       
     ],
   },

@@ -2,6 +2,7 @@ import { Col, Row } from "antd";
 import "../../styles/JoinUs.css";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import { Link } from "react-router-dom";
 const joinCards = [
   {
     image: "/images/JoinUsImages/JoinUs-First.svg",
@@ -10,7 +11,7 @@ const joinCards = [
   },
   {
     image: "/images/JoinUsImages/JoinUs-Second.svg",
-    button: "Apply as a Coach",
+    button: "Register a Club",
     class: "card-button button-transparent",
   },
   {
@@ -21,7 +22,8 @@ const joinCards = [
 ];
 const JoinUs = () => {
   return (
-    <Row data-aos="fade-up"
+    <Row
+      data-aos="fade-up"
       className="join-us-row"
       justify="center"
       style={{ position: "relative" }}
@@ -60,7 +62,14 @@ const JoinUs = () => {
                   src={card.image}
                 />
                 <Card.Body>
-                  <Button className={card.class}>{card.button}</Button>
+                  <Link
+                    to={
+                      "https://docs.google.com/forms/d/e/1FAIpQLScZ6YbsLCENnAxMlWQ3nzIdbg7Bly7oL2oo0VDMWcBXONJ4MA/viewform"
+                    }
+                    target="_blank"
+                  >
+                    <Button className={card.class}>{card.button}</Button>
+                  </Link>
                 </Card.Body>
               </Card>
             </Col>

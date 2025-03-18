@@ -1,12 +1,12 @@
 import { IoArrowUpCircleOutline } from "react-icons/io5";
-
+import { Link } from "react-router-dom";
 import { Carousel, Button, Row, Col } from "antd";
 import "../../styles/JumboCarousel.css";
 const slides = [
   {
     heading: "PADEL",
     subHeading: "What is PADEL?",
-    text: "PadelFIP is a dynamic racket sport combining elements of tennis and squash, typically played in doubles on an enclosed court. The game is fast-paced, with walls in play, allowing for unique angles and strategic gameplay.",
+    text: "Padel is a dynamic racket sport combining elements of tennis and squash, typically played in doubles on an enclosed court. The game is fast-paced, with walls in play, allowing for unique angles and strategic gameplay.",
     buttonText: "Learn more",
     imageDesktop: "/images/JumboCarouselImage/Carousel1-image.svg", // Desktop image
     imageMobile: "/images/JumboCarouselImage/Carousel1-image-mb.svg", // Mobile image
@@ -35,14 +35,17 @@ const JumboCarousel = () => (
             <div className="jumbo-carousel-card py-5">
               <h2 className="jumbo-carousel-title">{slide.subHeading}</h2>
               <p className="jumbo-carousel-text">{slide.text}</p>
-              <Button
-                className="jumbo-button"
-                color="danger"
-                shape="round"
-                variant="outlined"
-              >
-                {slide.buttonText} <IoArrowUpCircleOutline className="arrow" />
-              </Button>
+              <Link to={"/wip"}>
+                <Button
+                  className="jumbo-button"
+                  color="danger"
+                  shape="round"
+                  variant="outlined"
+                >
+                  {slide.buttonText}{" "}
+                  <IoArrowUpCircleOutline className="arrow" />
+                </Button>
+              </Link>
             </div>
           </div>
         ))}

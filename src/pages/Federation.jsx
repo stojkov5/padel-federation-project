@@ -8,7 +8,7 @@ const Federation = () => {
       <LandingImage />
       <div className="red-section md:w-9/12 w-12/12 relative">
         <p className="p-5 md:w-10/12 xs:w-12/12 federation-text ">
-          The Padel Federation of Macedonia (PFM) is the official governing body
+          The Padel Federation of Macedonia is the official governing body
           for the sport of padel in Macedonia. Established to promote, develop,
           and regulate padel across the country, the PFM is dedicated to
           fostering a vibrant and inclusive community for players of all ages

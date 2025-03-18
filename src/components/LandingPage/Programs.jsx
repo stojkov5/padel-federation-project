@@ -1,7 +1,7 @@
 import "../../styles/Programs.css";
 import { Card, Row, Col, Typography } from "antd";
 import { IoArrowUpCircleOutline } from "react-icons/io5";
-
+import { Link } from "react-router-dom";
 const { Title, Paragraph } = Typography;
 const Programs = () => {
   return (
@@ -28,10 +28,12 @@ const Programs = () => {
                     love for the game!
                   </Paragraph>
                 </div>
-                <button className="programs-details d-flex items-center justify-between gap-2 mt-4 hover:gap-4 transition-all">
-                  Read more details
-                  <IoArrowUpCircleOutline className="arrow" />
-                </button>
+                <Link to={"/program"}>
+                  <button className="programs-details d-flex items-center justify-between gap-2 mt-4 hover:gap-4 transition-all">
+                    Read more details
+                    <IoArrowUpCircleOutline className="arrow" />
+                  </button>
+                </Link>
               </div>
             </Card>
           </Col>
