@@ -8,8 +8,8 @@ const slides = [
     subHeading: "What is PADEL?",
     text: "Padel is a dynamic racket sport combining elements of tennis and squash, typically played in doubles on an enclosed court. The game is fast-paced, with walls in play, allowing for unique angles and strategic gameplay.",
     buttonText: "Learn more",
-    imageDesktop: "/images/JumboCarouselImage/Carousel1-image.svg", // Desktop image
-    imageMobile: "/images/JumboCarouselImage/Carousel1-image-mb.svg", // Mobile image
+    imageDesktop: "/images/JumboCarouselImage/Carousel1-image.png", // Desktop image
+    imageMobile: "/images/JumboCarouselImage/Carousel1-image-mb.png", // Mobile image
   },
   // {
   //   heading: "ENJOY",

@@ -240,7 +240,7 @@ const TournamentCard = () => {
         <Modal
           className="tournament-modal"
           title={selectedCard.title + " " + selectedCard.type}
-          visible={isModalVisible}
+          open={isModalVisible}
           onOk={handleOk}
           onCancel={handleCancel}
         >
