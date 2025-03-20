@@ -1,4 +1,6 @@
 {
+  "homepage": "https://stojkov5.github.io/padel-federation-project",
+
   "name": "padel-federation",
   "private": true,
   "version": "0.0.0",
@@ -7,7 +9,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@react-spring/web": "^9.7.5",
@@ -25,7 +29,7 @@
     "react-headroom": "^3.2.1",
     "react-horizontal-scrolling-menu": "^8.2.0",
     "react-icons": "^5.4.0",
-    "react-native-snap-carousel": "^3.9.1",
+    "react-native-snap-carousel": "^1.3.1",
     "react-player": "^2.16.0",
     "react-router": "^7.0.2",
     "react-router-dom": "^7.0.2",
@@ -47,6 +51,7 @@
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.14",
+    "gh-pages": "^6.3.0",
     "globals": "^15.12.0",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.16",
