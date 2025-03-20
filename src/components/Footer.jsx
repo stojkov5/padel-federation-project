@@ -93,20 +93,11 @@ const Footer = () => {
               <ul className="footer-list">
                 <li className="footer-title">Documentations</li>
                 <li className="footer-link">
-                  <Link
-                    onClick={scrollToTop}
-                    className={
-                      isLandingPage
-                        ? "footer-link"
-                        : location.pathname === "/program"
-                        ? "footer-active-link"
-                        : "footer-link"
-                    }
-                    to="/program"
-                  >
-                    Programs
+                  <Link to={"/Програма.pdf"} target="_blank" >
+                    Program
                   </Link>
                 </li>
+
                 <li className="footer-link">Contact us</li>
                 <li className="footer-link">Status of Federation</li>
                 <li className="footer-link">License of Federation</li>
