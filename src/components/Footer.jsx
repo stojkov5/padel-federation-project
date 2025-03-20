@@ -93,14 +93,22 @@ const Footer = () => {
               <ul className="footer-list">
                 <li className="footer-title">Documentations</li>
                 <li className="footer-link">
-                  <Link to={"/Програма.pdf"} target="_blank" >
+                  <Link to={"/Програма.pdf"} target="_blank">
                     Program
                   </Link>
                 </li>
 
                 <li className="footer-link">Contact us</li>
-                <li className="footer-link">Status of Federation</li>
-                <li className="footer-link">License of Federation</li>
+                <li className="footer-link">
+                  <Link to={"/Status.pdf"} target="_blank">
+                    Status of Federation
+                  </Link>
+                </li>
+                <li className="footer-link">
+                  <Link to={"/Licence.jpg"} target="_blank">
+                    License of Federation
+                  </Link>
+                </li>
               </ul>
             </Col>
           </Row>
